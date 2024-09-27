@@ -1,0 +1,17 @@
+Hay que instalar las siguientes librerías:
+
+npm install cordova-sms-plugin
+npm install @awesome-cordova-plugins/sms
+
+Hay que añadir el plugin SMS en los proveedores del main.ts:
+
+import { SMS } from '@awesome-cordova-plugins/sms/ngx';
+
+...
+
+ providers: [
+    provideRouter([]), 
+    provideIonic(),
+    SMS // Aquí declaras el proveedor de SMS
+  ]
+  
